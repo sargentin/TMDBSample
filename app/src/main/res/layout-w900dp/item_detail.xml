@@ -1,0 +1,65 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.sargent.android.tmdbsample.DetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/text_margin"
+            style="@style/TextAppearance.AppCompat.Large"
+            tools:text="Thor : Ragnorok"/>
+
+        <TextView
+            android:id="@+id/tv_detail_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:layout_below="@id/tv_detail_title"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            tools:text="Année de sortie : 2010"/>
+
+        <TextView
+            android:id="@+id/tv_detail_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/text_margin"
+            android:layout_below="@id/tv_detail_release_date"
+            android:layout_toStartOf="@id/iv_detail_poster"
+            style="@style/TextAppearance.AppCompat"
+            tools:text="Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit."/>
+
+        <Button
+            android:id="@+id/bt_more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/more_info"
+            android:textStyle="bold|italic"
+            android:textAllCaps="false"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tv_detail_overview"
+            android:layout_marginTop="@dimen/text_margin"
+            style="?android:borderlessButtonStyle"/>
+
+        <ImageView
+            android:id="@+id/iv_detail_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/the_walking_dead_poster"/>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Movie Database Sample</string>
+    <string name="title_item_detail">Détail</string>
+    <string name="action_share">Partager...</string>
+    <string name="release_date">Année de sortie : %1$s</string>
+    <string name="more_info">Plus d\'info...</string>
+</resources>
